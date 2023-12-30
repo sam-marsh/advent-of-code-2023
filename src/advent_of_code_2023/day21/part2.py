@@ -26,6 +26,11 @@ def solve(lines: list[str]) -> int:
     xs = np.array(list(range(len(lengths))))
     np.savetxt('data.txt', np.stack((xs, lengths)))
 
+    # Unsatisfying approach...
+    # Two observations from plotting data:
+    # - The pattern is periodic in the size of the square grid
+    # - The scaling is quadratic
+    # No idea how to solve this more generally.
     s = 26501365 % len(data)
     print(s)
     print(xs[s::len(data)])

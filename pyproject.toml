@@ -8,6 +8,10 @@ packages = [{include = "advent_of_code_2023", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+numpy = "^1.26.2"
+scipy = "^1.11.4"
+networkx = "^3.2.1"
+sympy = "^1.12"
 
 
 [build-system]
